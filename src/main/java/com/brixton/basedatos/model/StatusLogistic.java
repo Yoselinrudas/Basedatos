@@ -12,8 +12,10 @@ public class StatusLogistic extends Audit{
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private byte id;
+
     @Column(length = 20)
     private String description;
+
     @Column(name = "statuslogistic", length = 20)
     private String statusLogistic;
 

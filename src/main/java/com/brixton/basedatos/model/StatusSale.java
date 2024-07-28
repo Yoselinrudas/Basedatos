@@ -12,8 +12,10 @@ public class StatusSale extends Audit{
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     @Column(length = 20)
     private String description;
+
     @Column(name = "statussale", length = 20)
     private String statusSale;
 

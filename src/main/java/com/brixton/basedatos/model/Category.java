@@ -14,6 +14,7 @@ public class Category extends Audit{
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private byte id;
+
     @Column(name = "category_name", length = 30)
     private String categoryName;
 

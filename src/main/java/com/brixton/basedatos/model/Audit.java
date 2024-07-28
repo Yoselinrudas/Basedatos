@@ -6,17 +6,18 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
 @MappedSuperclass
 public class Audit {
     @Column(name = "createdat")
-    private LocalDate createdAt;
+    private LocalDateTime createdAt;
     @Column(name = "createdby", length = 20)
     private String createdBy;
     @Column(name = "updatedat")
-    private LocalDate updatedAt;
+    private LocalDateTime updatedAt;
     @Column(name = "updatedby", length = 20)
     private String updatedBy;
     @Column(name = "registry_state")

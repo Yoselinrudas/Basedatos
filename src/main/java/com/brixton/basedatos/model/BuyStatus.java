@@ -12,6 +12,7 @@ public class BuyStatus extends Audit{
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private byte id;
+
     @Column(name = "buystatus", length = 20)
     private String buyStatus;
 

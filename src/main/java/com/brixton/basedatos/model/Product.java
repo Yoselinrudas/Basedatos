@@ -22,11 +22,13 @@ public class Product extends Audit{
 
     private float quantity;
 
+    @Column(name = "pricesupplier")
     private float priceSupplier;
 
+    @Column(name = "pricesale")
     private float priceSale;
 
-    @Column(length = 20)
+    @Column(name = "codeproduct",length = 20)
     private String codeProduct;
 
 

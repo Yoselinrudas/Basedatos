@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
+@Table(name = "legal_client")
 @Getter
 @Setter
 public class LegalClient extends Person{
@@ -14,7 +15,7 @@ public class LegalClient extends Person{
     @Column(length = 11)
     private String ruc;
 
-    @Column(length = 50)
+    @Column(name = "razonsocial",length = 50)
     private String razonSocial;
 
     private boolean supplier;

@@ -14,7 +14,7 @@ public class Ticket extends Audit {
     private long id;
 
     @ManyToOne
-    @JoinColumn(name = "naturalclient_numberDoc", foreignKey = @ForeignKey(name = "fk_ticket_naturalclient_numberdoc"))
+    @JoinColumn(name = "naturalclient_document", foreignKey = @ForeignKey(name = "fk_ticket_naturalclient_numberdoc"))
     private NaturalClient naturalClient;
 
     @ManyToOne

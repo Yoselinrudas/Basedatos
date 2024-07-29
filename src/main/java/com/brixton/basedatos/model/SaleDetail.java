@@ -8,7 +8,7 @@ import lombok.Setter;
 @Table(name = "sale_detail")
 @Getter
 @Setter
-public class SaleDetail {
+public class SaleDetail extends Audit{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
